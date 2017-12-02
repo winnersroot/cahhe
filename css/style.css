@@ -273,6 +273,90 @@ a {
     font-size: 90px;
     font-weight: 800
 }
+/*-GALLERY-----------------------------------------*/
+
+.button__blue {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 55px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin: 50px auto;
+    background-color: #5585a2;
+    color: #ffffff;
+}
+.gallery {
+    width: 100%;
+    background-color: #ffe92f;
+    font-family: 'Raleway', sans-serif;
+    color: #262626;
+    padding-bottom: 70px;
+}
+.gallery .title {
+    padding-top: 100px;
+    margin-bottom: 29px;
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+}
+.gallery .describe {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 41px;
+}
+.gallery .gallery_img {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1170px;
+    height: 980px;
+}
+.gallery .gallery_img .gallery_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gallery .gallery_img .gallery_container__main {
+    height: 550px;
+}
+.gallery .gallery_img .gallery_container__main .gallery_item__big {
+    height: 550px;
+    width: 770px;
+}
+.gallery .gallery_img .gallery_container__small {
+    margin-left: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gallery .gallery_img .gallery_container__small .gallery_item__small {
+    height: 260px;
+    width: 370px;
+}
+.gallery .gallery_img .gallery_item {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.gallery .gallery_img .gallery_item:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.gallery .gallery_img .gallery_item__medium {
+    height: 400px;
+    width: 570px;
+}
+
+/*-END_GALLERY-----------------------------------------*/
+
 
 /*-CONTACT-----------------------------------------*/
 .contact {
