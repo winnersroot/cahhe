@@ -37,3 +37,154 @@ svg {
     line-height: 27px;
     color: #ffffff
 }
+/*-- CONTACT --*/
+.contact {
+    background: url(../img/contact_bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 980px;
+    height: 865px;
+    padding: 100px 165px 0
+}
+.content__contact {
+    max-width: 370px;
+    text-align: center;
+    margin: 0 auto 40px
+}
+.h1_contact {
+    font-size: 90px
+}
+.h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #262626;
+    text-align: left;
+    margin: 0;
+    padding: 0
+}
+.adress {
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #262626;
+    text-align: left;
+    margin: 0 0 15px 0;
+    padding: 0
+}
+.contact_main {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+.contact_item {
+    width: 500px
+}
+.contact_item__adress {
+    width: 317px;
+    margin-right: 200px
+}
+.form_input {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 14px;
+    background-color: rgba(0, 196, 196, 0.5);
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #ffffff
+}
+.form_input:focus {
+    background-color: #00c4c4;
+    border: none;
+    outline: 0
+}
+.form_input__message {
+    height: 250px;
+    padding: 0 0 210px 20px
+}
+::-webkit-input-placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #ffffff
+}
+:-moz-placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #ffffff
+}
+::-moz-placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #ffffff
+}
+:-ms-input-placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #ffffff
+}
+/*-- END_CONTACT --*/
+/*-- FOOTER --*/
+.footer {
+    background: #262626;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 980px;
+    min-height: 90px;
+    padding: 0 165px;
+    overflow: hidden
+}
+.logo {
+    width: 65px;
+    height: 27px;
+    fill: #b9b9b9
+}
+.accent {
+    color: #ff2b58
+}
+.p_footer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #b9b9b9
+}
+/*-- END_FOOTER --*/
