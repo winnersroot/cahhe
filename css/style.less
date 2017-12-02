@@ -1,0 +1,75 @@
+.services {
+    height: 790px;
+    min-width: 980px;
+    background-color: #70bfff;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.services_item {
+    width: 50%;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 10%;
+}
+.servises_button {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background-color: @colorLight;
+    width: 400px;
+    height: 100px;
+    .fonts(@font, @colorDark, 20px, 700, 27px);
+    color:  @colorDark;
+    text-align: center;
+    box-shadow: @shadow;
+    .myHover();
+}
+.button_name {
+    flex-grow: 1;
+}
+.servises_svg {
+    width: 100px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #9d9d9d;
+    flex-shrink: 0;
+}
+.bucket {
+    width: 47px;
+    height: 44px;
+}
+.carrot {
+    width: 55px;
+    height: 55px;
+}
+.hand {
+    width: 55px;
+    height: 49px;
+}
+.world {
+    width: 54px;
+    height: 54px;
+}
+.services_title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-bottom: 60px;
+    min-width: 544px;
+}
+.services_title--h1 {
+    color: white;
+    position: absolute;
+    left: -83px;
+    top: 290px;
+    font-size: 90px;
+    font-weight: 800;
+}
