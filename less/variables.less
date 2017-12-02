@@ -1,0 +1,27 @@
+/*-@variablse------------------------------------*/
+@font: 'Raleway', sans-serif;
+@colorDark: rgb(38, 38, 38);
+@colorLight: rgb(255, 255, 255);
+@colorMiddle: #b9b9b9;
+@colorAccent: #ff2b58;
+@colorLogo: #262626;
+
+@shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+
+/*--@variablse------------------------------------*/
+/*--MIXINS----------------------------------------*/
+ .fonts(@font: @font, @size:17px, @lineH:27px, @weight:300, @color:@colorDark) {
+ 	font-family: @font;
+ 	font-size: @size;
+ 	font-weight: @weight;
+ 	line-height: @lineH;
+ 	color: @color;
+ }
+
+ .myHover() {
+   &:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+   }
+ }
+ /*--END_MIXINS----------------------------------------*/

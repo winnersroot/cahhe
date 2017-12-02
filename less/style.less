@@ -1,0 +1,33 @@
+
+@import "variables";
+/*-GENERAL------------------------------------*/
+
+*, ::before, ::after {
+    padding: 0;
+    marging: 0;
+    box-sizing: border-box;
+}
+svg {
+    width: 0;
+    height: 0;
+}
+.content {
+    text-align: left;
+}
+.h1 {
+    .fonts(@size: 60px, @weight: 700);
+}
+.describe {
+    .fonts();
+}
+.button {
+    background-color: #ff6033;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 55px;
+    font-family: 'Raleway', sans-serif;
+    .fonts(@font: @font, @size: 20px, @lineH: 27px, @weight: 300, @color: @colorLight);
+}
+/*-END_GENERAL------------------------------------*/
+
+
