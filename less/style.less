@@ -1,33 +1,93 @@
 
 @import "variables";
-/*-GENERAL------------------------------------*/
+/*-GALLERY------------------------------------*/
 
-*, ::before, ::after {
-    padding: 0;
-    marging: 0;
-    box-sizing: border-box;
+.button__blue {
+  box-shadow: @shadow;
+  width: 200px;
+  height: 55px;
+  font-family: @font;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: @textAlign;
+  text-transform: uppercase;
+  display: block;
+  margin: 50px auto;
+  background-color: #5585a2;
+  color: @colorLight;
 }
-svg {
-    width: 0;
-    height: 0;
+
+.gallery {
+  width: 100%;
+  background-color: #ffe92f;
+  font-family: @font;
+  color: @colorDark;
+  padding-bottom: 70px;
+
+  .title {
+    padding-top: 100px;
+    margin-bottom: 29px;
+    text-align: @textAlign;
+    font-size: 90px;
+    font-weight: bold;
+  }
+
+  .describe {
+    .fonts(@font, @color: @colorDark, @size: 15px, @weight: 300, @lineH: 25px);
+    text-align: @textAlign;
+    margin-bottom: 41px;
+  }
+
+  .gallery_img {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1170px;
+    height: 980px;
+
+
+    .gallery_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .gallery_container__main {
+      height: 550px;
+
+      .gallery_item__big {
+        height: 550px;
+        width: 770px;
+      }
+    }
+
+    .gallery_container__small {
+      margin-left:30px;
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .gallery_item__small {
+        height: 260px;
+        width: 370px;
+      }
+    }
+
+    .gallery_item {
+      box-shadow: @shadow;
+      .myHover
+    }
+
+    .gallery_item__medium {
+      height: 400px;
+      width: 570px;
+    }
+
+  }
 }
-.content {
-    text-align: left;
-}
-.h1 {
-    .fonts(@size: 60px, @weight: 700);
-}
-.describe {
-    .fonts();
-}
-.button {
-    background-color: #ff6033;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-    width: 200px;
-    height: 55px;
-    font-family: 'Raleway', sans-serif;
-    .fonts(@font: @font, @size: 20px, @lineH: 27px, @weight: 300, @color: @colorLight);
-}
-/*-END_GENERAL------------------------------------*/
+
+/*-END_GALLERY------------------------------------*/
 
 

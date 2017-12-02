@@ -1,0 +1,13 @@
+{
+  "name": "Cahee",
+  "version": "0.0.0",
+  "description": "",
+  "git repository": "",
+  "author": "Alexandra Dmitrenko",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.5"
+  }
+}
