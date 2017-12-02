@@ -1,0 +1,12 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -155,8 +155,8 @@
+ 		<button class="button button__blue">View more</button>
+ 	</div>
+ 	<!-- END GALLERY -->
+-=======
+->>>>>>> 8aaedbf7963201b0e41e3ea87083344c5ed7609b
++=======
++>>>>>>> 8aaedbf7963201b0e41e3ea87083344c5ed7609b
+ 
+ 
+ 
