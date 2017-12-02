@@ -1,0 +1,322 @@
+
+@import "variables";
+/*-GENERAL------------------------------------*/
+
+*, ::before, ::after {
+    padding: 0;
+    marging: 0;
+    box-sizing: border-box;
+}
+svg {
+    width: 0;
+    height: 0;
+}
+.content {
+    text-align: left;
+}
+.h1 {
+    .fonts(@size: 60px, @weight: 700);
+}
+.describe {
+    .fonts();
+}
+.button {
+    background-color: #ff6033;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 55px;
+    font-family: 'Raleway', sans-serif;
+    .fonts(@font: @font, @size: 20px, @lineH: 27px, @weight: 300, @color: @colorLight);
+}
+
+a {
+    text-decoration: none;
+}
+/*-END_GENERAL------------------------------------*/
+
+.header {
+	width: 100vw;
+	height: 100vh;
+	min-width: 900px;
+	background: url(../img/header-bg.png) 60% 60%;
+	background-size: cover;
+}
+.header_conteiner {
+	width: 1170px;
+	margin: auto;
+	padding-top: 60px;
+}
+.header_nav {
+	display: flex;
+	justify-content: space-between;
+}
+.header_logo {
+	font: 50px/1px 'Pacifico', cursive;
+	color: @colorDark;
+}
+.nav {
+	text-align: right;
+	margin-left: 220px;
+	width: 70%;
+}
+.nav_link {
+	&::before {
+		content: "";
+		display: block;
+		width: 0%;
+		margin-bottom: 10px;
+		height: 4px;
+		background-color: #ff6033;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+	}
+	display: inline-block;
+	color: @colorDark;
+	text-transform: uppercase;
+	font: 700 16px/1px 'Raleway';
+	margin-left: 40px;
+}
+.header_info {
+	width: 370px;
+	height: 165px;
+	margin-top: 120px;
+}
+.header_title {
+	font: 700 60px/60px 'Raleway', sans-serif;
+}
+.header_text {
+	font: 300 17px/24px 'Raleway', sans-serif;
+	margin-top: 30px;
+}
+.header_btn {
+	width: 200px;
+	height: 55px;
+	margin-top: 35px;
+}
+.header_btn1 {
+	width: 200px;
+	height: 55px;
+	background-color: #ff6033;
+	font: 300 20px/1px 'Raleway';
+	border: none;
+	box-shadow: 0 0 2px;
+}
+.header_scroll {
+	width: 30px;
+	height: 40px;
+	margin: 90px auto 50px;
+}
+.about {
+	height: 700px;
+	color: white;
+	background: #00b2b2;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.about_info {
+	margin-left: 80px;
+}
+.about_title {
+	font: 700 80px/95px 'Raleway';
+}
+.about_text {
+	width: 500px;
+	font: 300 17px/24px 'Raleway';
+}
+.about_text+.about_text {
+	margin-top: 25px;
+}
+
+/*__*/
+
+
+.services {
+    height: 790px;
+    min-width: 980px;
+    background-color: #70bfff;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.services_item {
+    width: 50%;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 10%;
+}
+.servises_button {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background-color: @colorLight;
+    width: 400px;
+    height: 100px;
+    .fonts(@font, @colorDark, 20px, 700, 27px);
+    color:  @colorDark;
+    text-align: center;
+    box-shadow: @shadow;
+    .myHover();
+}
+.button_name {
+    flex-grow: 1;
+}
+.servises_svg {
+    width: 100px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #9d9d9d;
+    flex-shrink: 0;
+}
+.bucket {
+    width: 47px;
+    height: 44px;
+}
+.carrot {
+    width: 55px;
+    height: 55px;
+}
+.hand {
+    width: 55px;
+    height: 49px;
+}
+.world {
+    width: 54px;
+    height: 54px;
+}
+.services_title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-bottom: 60px;
+    min-width: 544px;
+}
+.services_title--h1 {
+    color: white;
+    position: absolute;
+    left: -83px;
+    top: 290px;
+    font-size: 90px;
+    font-weight: 800;
+}
+/*_______*/
+
+
+/*-CONTACT-----------------------------------------*/
+
+.contact {
+    background: url(../img/contact_bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 980px;
+    height: 865px;
+    padding: 100px 165px 0;
+}
+.content__contact {
+    max-width: 370px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+.h1_contact {
+    font-size: 90px;
+}
+.h2 {
+    .fonts(@size:17px, @weight:700);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.adress {
+    .fonts(@size:19px, @weight:300);
+    text-align: left;
+    margin: 0 0 15px 0;
+    padding: 0;
+
+}
+.contact_main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact_item {
+    width: 500px;
+}
+.contact_item__adress {
+    width: 317px;
+    margin-right: 200px;
+}
+
+.form_input{
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 14px;
+    background-color:  rgba(0, 196, 196, 0.5);
+    border: none;
+    .fonts(@size:15px, @weight:700, @lineH:25px, @color:@colorLight);
+    &:focus {
+        background-color:  #00c4c4;
+        border: none;
+        outline: 0;
+
+    }
+}
+.form_input__message {
+    height: 250px;
+    padding: 0 0 210px 20px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+   .fonts(@size:15px, @weight:300, @lineH:25px, @color:@colorLight);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   .fonts(@size:15px, @weight:300, @lineH:25px, @color:@colorLight);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   .fonts(@size:15px, @weight:300, @lineH:25px, @color:@colorLight);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   .fonts(@size:15px, @weight:300, @lineH:25px, @color:@colorLight);
+}
+
+/*-END_CONTACT-----------------------------------------*/
+/*-FOOTER-----------------------------------------*/
+.footer {
+    background: #262626;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 980px;
+    min-height: 90px;
+    padding: 0 165px;
+    overflow: hidden;
+}
+.logo {
+    width: 65px;
+    height: 27px;
+    fill: @colorMiddle;
+}
+.accent{
+    color: @colorAccent;
+
+}
+.p_footer {
+    .fonts(@size:15px, @lineH:25px, @weight:300, @color:@colorMiddle);
+
+}
+
+/*-END_FOOTER-----------------------------------------*/
+
+
